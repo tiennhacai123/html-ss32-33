@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let person = {
+    name: "Tien",
+    age: 19,
+    address: "Ha Dong",
+};
+console.log("Thong tin ban dau:");
+console.log("Ten:", person.name);
+console.log("Tuoi:", person.age);
+console.log("Đia chi:", person.address);
+person.birthday = "28/07/2005";
+delete person.age;
+console.log("-------------------------");
+console.log("Thong tin sau thay doi:");
+console.log("Ten:", person.name);
+console.log("Dia chi:", person.address);
+console.log("Ngay sinh:", person.birthday);
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+class Book {
+    constructor(title, author, publishedYear) {
+        this.title = title;
+        this.author = author;
+        this.publishedYear = publishedYear;
+    }
+    displayInfo() {
+        console.log("Thong tin sach:");
+        console.log("Tieu de:", this.title);
+        console.log("Tac gia:", this.author);
+        console.log("Nam xuat ban:", this.publishedYear);
+    }
+}
+class Library {
+    constructor() {
+        this.books = [];
+    }
+    addBook(book) {
+        this.books.push(book);
+    }
+    displayLibrary() {
+        console.log("Danh sach sach trong thu vien:");
+        for (let book of this.books) {
+            book.displayInfo();
+            console.log("------------------------");
+        }
+    }
+}
+let book1 = new Book("Tien1", "letien1", 2020);
+let book2 = new Book("Tien2", "letien2", 2018);
+let book3 = new Book("Tien3", "letien3", 2022);
+let library = new Library();
+library.addBook(book1);
+library.addBook(book2);
+library.addBook(book3);
+library.displayLibrary();
+
+</script>
+</html>

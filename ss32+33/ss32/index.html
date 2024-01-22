@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let person = {
+    //     //key value
+    //     name: "Le Tien",
+    //     age: "19",
+    //     school: " PTIT",
+    //     phone: "0394882659",
+    //     //method 
+    //     eat: function(){
+    //         console.log("Nhai nhom nhoam");
+    //     },
+    //     sleep: function(){
+    //         console.log("Gay kho kho");
+    //     },
+    // };
+    // function Student(name,age){
+    //     this.name = name;
+    //     this.age = age;
+    //     this.introduce= function(){
+    //         console.log(this);
+    //         console.log(`Hello my name is ${this.name}`);
+    //     }
+    // }
+    // let student1 = new Student("Le Tien","19");
+    // let student2 = new Student("Nam Son","19");
+    // let student3 = new Student("The Minh","19");
+    // console.log(student1);
+    // console.log(student2);
+    // console.log(student3);
+    // student1.introduce();
+    // student2.introduce();
+    // student3.introduce();
+//    class person{
+//     constructor(name, age){
+//     this.name = name;
+//     this.age = age;
+//    }
+//    introduce(){
+//     console.log(`Hello my name is ${this.name}`);
+//    }
+// }
+// let person1 = new person("Le Tien","19");
+// let person2 = new person("Le Tien1","20");
+// let person3 = new person("Le Tien2","21");
+// person1.introduce();
+// person2.introduce();
+// person3.introduce();
+class Student {
+    constructor(id, name){
+        this.id = id;
+        this.name = name;
+    }
+}
+const students = [
+    new Student(1,"Tien"),
+    new Student(2,"Le"),
+    new Student(3,"Dien"),
+];
+//C-R-U-D
+//read one(can biet chi so cua phan tu minh muon in ra)
+
+//read all
+console.log("Danh sach hoc sinh",students);
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Mở rộng đối tượng đại diện cho danh bạ điện thoại
+let phoneBook = [
+    { name: "tien", phone: "023423324", email: "4234@.com" },
+    { name: "tienle", phone: "0823423", email: "423423@.com" },
+
+];
+function displayFullContactInfo(contact) {
+    console.log("Đầy đủ thông tin liên lạc:");
+    console.log("Tên:", contact.name);
+    console.log("Số điện thoại:", contact.phone);
+    console.log("Email:", contact.email);
+}
+console.log("Danh bạ điện thoại:");
+for (let contact of phoneBook) {
+    displayFullContactInfo(contact);
+    console.log("------------------------");
+}
+
+</script>
+</html>

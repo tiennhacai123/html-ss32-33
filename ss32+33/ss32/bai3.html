@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+class Student {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+let numStudents = +prompt("Nhap so luong hoc sinh");
+let students = [];
+for (let i = 1; i <= numStudents; i++) {
+    let id = prompt("Nhap vao id nguoi dung");
+    let name = prompt("Nhap vao ten nguoi dung");
+    let student = new Student(id, name);
+    students.push(student);
+}
+console.log(students);
+
+</script>
+</html>
